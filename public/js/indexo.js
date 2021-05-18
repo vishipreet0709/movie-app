@@ -7,16 +7,16 @@ serachbtn.addEventListener('keyup',(evt)=>{
         const value=serachbtn.value;
         if(value==="")
         {
-            window.location.href='http://localhost:4000/';
+            window.location.href='https://moviearena.herokuapp.com/';
         }
         else
         {
-            window.location.href=`http://localhost:4000/search?v=${value}`;
+            window.location.href=`https://moviearena.herokuapp.com/search?v=${value}`;
         }
     }
 })
 
 
 brand.addEventListener('click',()=>{
-    window.location.href="http://localhost:4000/";
+    window.location.href="https://moviearena.herokuapp.com/";
 })

@@ -7,7 +7,7 @@ singleblock.forEach((item)=>{
         const mid=item.getAttribute('id');
         const p=document.querySelector('.main-container').getAttribute('id');
         const q=item.getAttribute('data-q');
-        window.location.href=`http://localhost:4000/movie?id=${mid}&page=${p}&query=${q}`;
+        window.location.href=`https://moviearena.herokuapp.com/movie?id=${mid}&page=${p}&query=${q}`;
     })
 })
 
@@ -17,18 +17,18 @@ serachbtn.addEventListener('keyup',(evt)=>{
         const value=serachbtn.value;
         if(value==="")
         {
-            window.location.href="http://localhost:4000/";
+            window.location.href="https://moviearena.herokuapp.com/";
         }
         else
         {
            
-            window.location.href=`http://localhost:4000/search?v=${value}`;
+            window.location.href=`https://moviearena.herokuapp.com/search?v=${value}`;
         }
     }
 })
 
 
 brand.addEventListener('click',()=>{
-    window.location.href="http://localhost:4000/";
+    window.location.href="https://moviearena.herokuapp.com/";
 })
 
