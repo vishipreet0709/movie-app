@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #272532;
+   text-align: center;
+   text-transform: capitalize;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+    position: relative;
+    background: #EBE5E2;
+    border-radius: 10px;
+    width:50%;
+    height:auto;
+}
+.btn{
+    background-color: #272532;
+    color:#EBE5E2;
+    border-radius: 3px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: .25rem .5rem;
+    cursor: pointer;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.logo{
+    
+}
+.poster{
+    display: block;
+    height: 100%;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    height: 100%;
+    margin-right: 20px;
+    width: 50%;
+    margin-top: 20px;
+
+}
+.title h1{
+    margin: 20px 0; 
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+.title p{
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.overview{
+    margin-top: 30px;
+    color: black;
+}
+.runtime{
+    margin-top: 20px;
+   margin-bottom: 20px;
+}
+.de{
+    margin-bottom: 7px;
+}

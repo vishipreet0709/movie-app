@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #272532;
+   text-align: center;
+   text-transform: capitalize;
+}
+.container{
+    margin-bottom: 30px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #373B69;
+    box-shadow: -10px 10px 5px #708ED2;
+}
+.brand{
+    margin: 27px 4%;
+    margin-right: 0;
+    color: rgba(0, 238, 255, 0.699);
+    cursor: pointer;
+}
+.brandname{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 7px;
+}
+
+.searcharea{
+    margin-left: 10px;
+    padding:.5rem;
+    font-size: 1rem;
+    margin-right: 4%;
+    outline: none;
+    color: #EBE5E2;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid #EBE5E2;
+}
+.searcharea:focus{
+   padding: 1rem;
+}
+/* maincontainer */
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    min-height: calc(100vh - 87.6px);
+    padding: 20px 0;
+}
+.side-bar{
+
+    width: 20%;
+    height: 90vh;
+    display: none;
+    background: #83CFDF;
+}
+.single-block{
+    width: 15%;
+    margin: 10px 2.5%;
+    background: #373b69cb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 3px #15161dcb;
+    cursor: pointer;
+}
+.poster{
+    width: 100%;
+    height: 230px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    min-height: 30%;
+    width: 100%;
+
+}
+.title h3{
+    color: #EBE5E2;
+    margin:15px 5px;
+}
+.rating{
+    margin-left: 12px;
+    color: chocolate;
+    background: #272532;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+    padding: .5rem;
+}
+
+.single-page{
+    font-size: 1.5rem;
+    margin: 20px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: chocolate;
+    cursor: pointer;
+}
+.single-page:hover{
+    border: 2px solid #373B69;
+    box-shadow: 1px 1px black;
+}
+.oops{
+    margin-left: 50px;
+    font-size: 3rem;
+    color: #EBE5E2;
+    
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MOVIES ARENA</title>
+</head>
+<body>
+        <div class="container">
+            <div class="header">
+                    <div class="brand">
+                        <h2 class="brandname">Movies ARENA</h2>
+                    <span><i class="fas fa-compact-disc fa-2x"></i></span>
+                    </div>
+                
+                    <input type="search" name="search" id="srch" class="searcharea" placeholder="Search Movies" autocomplete="off">
+            </div>
+            <div class="main-container" id=<%= page %>>
+               <% var i=0; %>
+            <% results.forEach((result)=>{ %>
+                
+                <div class="single-block" id=<%= result.id %>  data-q=<%=query %> >
+                    <% const ip='https://image.tmdb.org/t/p/w200/'+result.poster_path %>
+                    <img  alt="poster" class="poster"src=<%= ip %> >
+                    <div class="title">
+                        <h3><%= result.title %></h3>
+                        <div class="rating"><%= result.vote_average %></div>
+                    </div>
+                </div>
+                <% i++ %>
+            <% }) %>;
+                
+            </div>
+
+            <div class="pagination">
+               <a href="/back" class="single-page back">&laquo;</a>
+               <a href="/next" class="single-page next">&raquo;</a>
+                
+            </div>
+        </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

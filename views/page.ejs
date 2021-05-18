@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/page.css">
+    <title><%= result.title %></title>
+</head>
+<body>
+    <div class="container"   id=<%= page %> data-q=<%= query %>>
+        <button class="btn" ><i class="fas fa-times fa-2x"></i></button>
+           <div class="heading">
+               <div class="logo">
+                <% const ip='https://image.tmdb.org/t/p/w300/'+result.poster_path ; %>
+                <img src="<%= ip %>" alt="movie poster" class="poster">
+               </div>
+               <div class="title">
+                <h1><%= result.title %></h1>
+                <div class="overview">
+                    <%= result.overview %>
+               </div>
+               <div class="runtime">
+                     <h3 class="de"> genres:      <span >
+                       <% const g= result.genres; %>
+                       <% for(var i=0;i< g.length ;i++){ %>
+                      <%= g[i].name   %>   
+                  <%     }; %>
+                   </span>
+                </h3>
+                <h3 class="de">Runtime: <span>
+                    <%= result.runtime %>
+                    MINS.
+                </span></h3>
+                <h3 class="de">Spoken_languages: <span>
+                    <% const gs= result.spoken_languages; %>
+                       <% for(var i=0;i< gs.length  ;i++){ %>
+                      <%= gs[i].english_name  %>   
+                  <%     }; %>
+                </span></h3>
+                <h3 class="de">Release Date: <span>
+
+                    <%= result.release_date %>.
+                </span></h3>
+                <h3>Rating : <span>
+                    <%= result.vote_average %>
+                </span>
+                </h3>
+               </div>
+                </div>
+           </div>
+           
+    </div>
+    <script src="js/page.js"></script>
+</body>
+</html>
