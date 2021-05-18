@@ -125,3 +125,29 @@ body{
     color: #EBE5E2;
     
 }
+@media screen and (max-width:952px) {
+    .single-block{
+        width: 20%;
+    }
+}
+@media  screen and (max-width:700px) {
+    .single-block{
+        width: 27%;
+    }
+}
+
+@media  screen and (max-width:576px) {
+    .single-block{
+        width: 45%;
+    }
+    .brand{
+        margin-left: 10px;
+
+    }
+    .brandname{
+        margin-right: 2px;
+    }
+    .searcharea:focus{
+        padding: .70rem;
+    }
+}
