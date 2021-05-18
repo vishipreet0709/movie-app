@@ -35,13 +35,12 @@ body{
     justify-content: space-between;
     
 }
-.logo{
-    
-}
+
 .poster{
     display: block;
     height: 100%;
-    width: 300px;
+   width: 50%;
+   margin-right: 40px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
