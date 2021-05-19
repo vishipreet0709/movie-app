@@ -9,8 +9,9 @@
     <title><%= result.title %></title>
 </head>
 <body>
-    <div class="container"   id=<%= page %> data-q=<%= query %>>
-        <button class="btn" ><i class="fas fa-times fa-2x"></i></button>
+    <% const q=encodeURIComponent(query); %>
+    <div class="container"   id=<%= page %> >
+        <button class="btn" id=<%= q %> ><i class="fas fa-times fa-2x"></i></button>
            <div class="heading">
                <div class="logo">
                 <% const ip='https://image.tmdb.org/t/p/w300/'+result.poster_path ; %>

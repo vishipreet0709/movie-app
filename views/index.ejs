@@ -21,8 +21,8 @@
             <div class="main-container" id=<%= page %>>
                <% var i=0; %>
             <% results.forEach((result)=>{ %>
-                
-                <div class="single-block" id=<%= result.id %>  data-q=<%=query %> >
+                <% const q=encodeURIComponent(query); %>
+                <div class="single-block" id=<%= result.id %>  data-q=<%= q %> >
                     <% const ip='https://image.tmdb.org/t/p/w200/'+result.poster_path %>
                     <img  alt="poster" class="poster"src=<%= ip %> >
                     <div class="title">
