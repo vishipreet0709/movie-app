@@ -85,7 +85,7 @@ app.get('/search',async (req,res)=>{
        if(response.data.results.length!==0)
        {
            s=1;
-           
+           encodeURIComponent
        res.render('search',{page:s,results:response.data.results,query:v});
        }
        else

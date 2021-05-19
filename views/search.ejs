@@ -25,7 +25,8 @@
                 <div class="single-block" id=<%= result.id %>   >
                     <% const ip='https://image.tmdb.org/t/p/w200/'+result.poster_path %>
                     <img  alt="poster" class="poster"src=<%= ip %> >
-                    <div class="title" data-q=<%= query %> >
+                    <% const q=encodeURIComponent(query);
+                    <div class="title" id=<%= q %> >
                         <h3><%= result.title %></h3>
                         <div class="rating"><%= result.vote_average %></div>
                     </div>
