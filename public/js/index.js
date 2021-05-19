@@ -20,8 +20,7 @@ serachbtn.addEventListener('keyup',(evt)=>{
             window.location.href="https://moviearena.herokuapp.com/";
         }
         else
-        {
-           
+        { 
             window.location.href=`https://moviearena.herokuapp.com/search?v=${value}`;
         }
     }
