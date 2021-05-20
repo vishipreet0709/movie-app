@@ -125,6 +125,13 @@ body{
     color: #EBE5E2;
     
 }
+
+.sponsor{
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #373B69;
+    color: #708ED2;
+}
 @media screen and (max-width:952px) {
     .single-block{
         width: 20%;
